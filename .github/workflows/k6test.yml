@@ -1,0 +1,12 @@
+name: Load Test
+on: [push]
+jobs:
+  k6_test_02:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run k6 test for test_02
+        uses: k6io/action@v0.1
+        with:
+          filename: tests/performance.js
