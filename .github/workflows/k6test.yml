@@ -1,5 +1,8 @@
 name: Load Test
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   k6_test_02:
     runs-on: ubuntu-latest
@@ -9,4 +12,4 @@ jobs:
       - name: Run k6 test for test_02
         uses: k6io/action@v0.1
         with:
-          filename: performance.js
+          filename: tests/performance.js
