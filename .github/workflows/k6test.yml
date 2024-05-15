@@ -1,4 +1,8 @@
 name: Load Test
+on:
+  push:
+    branches:
+      - main
 jobs:
   k6_test_02:
     runs-on: ubuntu-latest
