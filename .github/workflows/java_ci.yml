@@ -23,5 +23,10 @@ jobs:
         run: |
           cd tests
           javac SimpleProgramme.java
-          output=$(java SimpleProgramme)
-          echo "$output"
+          java org.testng.TestNG testng.xml
+
+      - name: Upload test results artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: tests/test-output
