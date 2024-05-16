@@ -23,4 +23,5 @@ jobs:
         run: |
           cd tests
           javac SimpleProgramme.java
-          java SimpleProgramme
+          output=$(java SimpleProgramme)
+          echo "$output"
