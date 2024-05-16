@@ -1,3 +1,5 @@
+import org.testng.annotations.Test;
+
 public class SimpleProgramme {
 
     public static void main(String[] args) {
@@ -5,6 +7,7 @@ public class SimpleProgramme {
 
     }
 
+    @Test
     public static void printTheseInYourMachine() {
         System.out.println("Hi there");
         System.out.println("I am on windows");
