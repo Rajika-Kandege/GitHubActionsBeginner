@@ -17,6 +17,7 @@ public class SimpleProgramme {
         System.out.println("Hey suning");
     }
 
+    // Sort an array
      public static void sortNumbersInAnArray(int[] items){
 
     Arrays.sort(items);
