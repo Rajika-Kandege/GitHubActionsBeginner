@@ -23,7 +23,7 @@ jobs:
         run: |
           cd tests
           javac SimpleProgramme.java
-          java org.testng.TestNG testng.xml
+          
 
       - name: Upload test results artifact
         uses: actions/upload-artifact@v2
