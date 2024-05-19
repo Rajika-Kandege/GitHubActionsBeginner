@@ -1,4 +1,3 @@
-import org.testng.annotations.Test;
 import java.util.Arrays;
 
 
@@ -11,7 +10,6 @@ public class SimpleProgramme {
 
     }
 
-    @Test
     public static void printTheseInYourMachine() {
         System.out.println("Hi there");
         System.out.println("I am on windows");
