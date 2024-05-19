@@ -1,4 +1,6 @@
 import org.testng.annotations.Test;
+import java.util.Arrays;
+
 
 public class SimpleProgramme {
 
@@ -23,4 +25,5 @@ public class SimpleProgramme {
     for(int eachNumber : items){
       System.out.println(eachNumber);
    }
+     }
 }
