@@ -14,7 +14,7 @@ public class SimpleProgramme {
     values.add(45);
     values.add(43);
     sortSet(values);
-countVowels("Micheal);
+countVowels("Micheal");
 
   }
 
