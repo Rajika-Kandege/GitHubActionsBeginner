@@ -14,11 +14,27 @@ public class SimpleProgramme {
     values.add(45);
     values.add(43);
     sortSet(values);
-
+countVowels("Micheal);
 
   }
 
+public static void countVowels(String name){
 
+    List<Character> items = new ArrayList<>();
+    List<Character> vowels = new ArrayList<>();
+
+    for (int i = 0; i < name.length() ; i++) {
+      items.add(name.charAt(i));
+
+    }
+
+    for(char eachChar : items){
+    if(eachChar == 'a' | eachChar == 'e' | eachChar == 'i' | eachChar == 'o' | eachChar == 'u'){
+      vowels.add(eachChar);
+
+    }}
+    System.out.println(vowels.size());
+  }
 
  public static void sortSet(Set<Integer> values){
 
