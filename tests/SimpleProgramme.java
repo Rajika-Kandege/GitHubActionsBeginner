@@ -18,10 +18,23 @@ countVowels("Micheal");
         oddOrEven(90);
     reverseString("hey");
     reverseNumber(909034);
+    compareTwoArrays(new int[] {2,4 ,6}, new int[] {6,4,2});
 
 
   }
+public static void compareTwoArrays(int[] arrayOne , int[] arrayTwo){
 
+    Arrays.sort(arrayOne);
+    Arrays.sort(arrayTwo);
+   boolean value =  Arrays.equals(arrayTwo,arrayOne);
+
+   if (value == true){
+     System.out.println("true");
+   }
+   else {
+     System.out.println("false");
+   }
+  }
    public static void reverseNumber(int number){
     String convertToString = String.valueOf(number);
 
