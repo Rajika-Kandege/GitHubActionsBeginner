@@ -17,8 +17,25 @@ public class SimpleProgramme {
 countVowels("Micheal");
         oddOrEven(90);
     reverseString("hey");
+    reverseNumber(909034);
 
 
+  }
+
+   public static void reverseNumber(int number){
+    String convertToString = String.valueOf(number);
+
+    String reversedString = "";
+
+    for (int i = convertToString.length()-1; i >= 0 ; i--) {
+
+      reversedString = reversedString + convertToString.charAt(i);
+
+    }
+
+    int updatedNumber = Integer.parseInt(reversedString);
+
+    System.out.println(updatedNumber);
   }
 
    public static void reverseString(String name){
