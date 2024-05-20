@@ -19,8 +19,14 @@ countVowels("Micheal");
     reverseString("hey");
     reverseNumber(909034);
     compareTwoArrays(new int[] {2,4 ,6}, new int[] {6,4,2});
+    removeDuplicates(Arrays.asList(6,8,8,9,5,6,7,5,6,3));
 
 
+  }
+   public static void removeDuplicates(List<Integer> list){
+    Set<Integer> uniqueValues = new HashSet<>();
+    uniqueValues.addAll(list);
+    System.out.println(uniqueValues);
   }
 public static void compareTwoArrays(int[] arrayOne , int[] arrayTwo){
 
