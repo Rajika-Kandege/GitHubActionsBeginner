@@ -15,7 +15,19 @@ public class SimpleProgramme {
     values.add(43);
     sortSet(values);
 countVowels("Micheal");
+        oddOrEven(90);
 
+
+  }
+
+  public static void oddOrEven(int number){
+    if(number % 2 == 0){
+      System.out.println("Number is even");
+    }
+
+    else {
+      System.out.println("Number is odd");
+    }
   }
 
 public static void countVowels(String name){
