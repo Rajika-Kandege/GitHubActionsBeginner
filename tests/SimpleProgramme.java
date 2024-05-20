@@ -24,9 +24,28 @@ countVowels("Micheal");
     reverseNumber(909034);
     compareTwoArrays(new int[] {2,4 ,6}, new int[] {6,4,2});
     removeDuplicates(Arrays.asList(6,8,8,9,5,6,7,5,6,3));
+      compareTwoStringsAreAnagram("hey how", "heyhow");  }
 
 
   }
+    public static void compareTwoStringsAreAnagram(String one , String two){
+     String updatedOne =  one.toLowerCase().replaceAll(" ","");
+      String updatedTwo =  two.toLowerCase().replaceAll(" ","");
+
+    char[] arrayOne = updatedOne.toCharArray();
+    char[] arrayTwo = updatedTwo.toCharArray();
+    Arrays.sort(arrayTwo);
+    Arrays.sort(arrayOne);
+
+   boolean value =  Arrays.equals(arrayTwo,arrayOne);
+   if (value == true){
+       System.out.println("true");
+   }
+   else {
+       System.out.println("false");
+   }
+  }
+
    public static void removeDuplicates(List<Integer> list){
     Set<Integer> uniqueValues = new HashSet<>();
     uniqueValues.addAll(list);
