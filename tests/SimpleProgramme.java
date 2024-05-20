@@ -16,8 +16,14 @@ public class SimpleProgramme {
     sortSet(values);
 countVowels("Micheal");
         oddOrEven(90);
+    reverseString("hey");
 
 
+  }
+
+   public static void reverseString(String name){
+    String reversedName = new StringBuilder(name).reverse().toString();
+    System.out.println(reversedName);
   }
 
   public static void oddOrEven(int number){
