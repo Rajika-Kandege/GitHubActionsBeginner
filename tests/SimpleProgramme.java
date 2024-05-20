@@ -24,7 +24,7 @@ countVowels("Micheal");
     reverseNumber(909034);
     compareTwoArrays(new int[] {2,4 ,6}, new int[] {6,4,2});
     removeDuplicates(Arrays.asList(6,8,8,9,5,6,7,5,6,3));
-      compareTwoStringsAreAnagram("hey how", "heyhow");  }
+      compareTwoStringsAreAnagram("hey how", "heyhow");  
 
 
   }
