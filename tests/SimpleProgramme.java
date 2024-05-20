@@ -25,9 +25,22 @@ countVowels("Micheal");
     compareTwoArrays(new int[] {2,4 ,6}, new int[] {6,4,2});
     removeDuplicates(Arrays.asList(6,8,8,9,5,6,7,5,6,3));
       compareTwoStringsAreAnagram("hey how", "heyhow");  
+      checkVowelIsPresent("galle",'a');
 
 
   }
+   public static void checkVowelIsPresent(String name , char vowel){
+      List<Character> items = new ArrayList<>();
+        for (int i = 0; i < name.length() ; i++) {
+            items.add(name.charAt(i));
+        }
+            if(items.contains(vowel)){
+                System.out.println("true");
+            }
+            else {
+                System.out.println("false");
+            }
+    }
     public static void compareTwoStringsAreAnagram(String one , String two){
      String updatedOne =  one.toLowerCase().replaceAll(" ","");
       String updatedTwo =  two.toLowerCase().replaceAll(" ","");
