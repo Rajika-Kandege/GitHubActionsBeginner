@@ -11,9 +11,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 
-public class SimpleProgramme throws IOException {
+public class SimpleProgramme  {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     sortNumbersInAnArray(new int[] {2,4,1,3,5,2,3,45,23});
     sortList(Arrays.asList(2,4,5,1,2,23,12,34,4,6));
 
