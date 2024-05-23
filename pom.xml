@@ -29,6 +29,11 @@
                 <configuration>
                     <source>11</source>
                     <target>11</target>
+                    <includes>
+                        <include>**/*Programme.java</include>
+                        <include>**/*SimpleProgramme.java</include>
+                        <include>**/*TestCase.java</include>
+                    </includes>
                 </configuration>
             </plugin>
         </plugins>
