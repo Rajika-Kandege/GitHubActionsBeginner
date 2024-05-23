@@ -1,6 +1,6 @@
-# Java Batch Processor
+# Java test methods
 
-This Java project demonstrates batch processing, string manipulation, and JSON file parsing. It includes several utility methods for sorting, reversing, and analyzing strings and arrays.
+This Java project demonstrates  string manipulation, and JSON file parsing. It includes several utility methods for sorting, reversing, and analyzing strings and arrays.
 
 ## Features
 
