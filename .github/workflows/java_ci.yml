@@ -27,7 +27,7 @@ jobs:
       - name: Compile and test
         run: |
           mkdir -p classes
-          javac -cp libs/json-path-2.6.0.jar -d classes test/SimpleProgramme.java
+          javac -cp libs/json-path-2.6.0.jar -d classes tests/SimpleProgramme.java
           java -cp libs/json-path-2.6.0.jar:classes SimpleProgramme
 
       - name: Upload test results artifact
