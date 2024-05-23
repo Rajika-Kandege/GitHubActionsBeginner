@@ -19,11 +19,16 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
+      - name: Download JSONPath JAR
+        run: |
+          mkdir -p libs
+          wget -O libs/json-path-2.6.0.jar https://repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar
+
       - name: Compile and test
         run: |
-          cd tests
-          javac SimpleProgramme.java
-          
+          mkdir -p classes
+          javac -cp libs/json-path-2.6.0.jar -d classes test/SimpleProgramme.java
+          java -cp libs/json-path-2.6.0.jar:classes SimpleProgramme
 
       - name: Upload test results artifact
         uses: actions/upload-artifact@v2
