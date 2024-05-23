@@ -26,9 +26,22 @@ countVowels("Micheal");
     removeDuplicates(Arrays.asList(6,8,8,9,5,6,7,5,6,3));
       compareTwoStringsAreAnagram("hey how", "heyhow");  
       checkVowelIsPresent("galle",'a');
+    readJsonFileValues();
 
 
   }
+
+  public static void readJsonFileValues() throws IOException {
+
+    String jsonFilePath = "src/main/resources/jsonvalues.json";
+    String jsonData = new String(Files.readAllBytes(Paths.get(jsonFilePath)));
+
+    // Extract strings from JSON using JSONPath
+    List<String> eachWords = JsonPath.read(jsonData, "$.sentences[*]");
+    System.out.println(eachWords);
+    
+  }
+  
    public static void checkVowelIsPresent(String name , char vowel){
       List<Character> items = new ArrayList<>();
         for (int i = 0; i < name.length() ; i++) {
