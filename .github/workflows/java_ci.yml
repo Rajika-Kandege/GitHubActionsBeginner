@@ -19,16 +19,11 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
-      - name: Cache Maven packages
-        uses: actions/cache@v2
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
-
       - name: Build with Maven
-        run: mvn clean install
+        run: mvn clean compile test-compile
 
-      - name: Run the application
-        run: mvn exec:java -Dexec.mainClass="SimpleProgramme"
+      - name: Run tests
+        run: mvn test
+
+      - name: Execute Main Class from Test Sources
+        run: mvn exec:java -Dexec.mainClass="com.example.SimpleProgramme"
