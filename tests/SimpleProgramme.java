@@ -33,7 +33,7 @@ countVowels("Micheal");
 
   public static void readJsonFileValues() throws IOException {
 
-    String jsonFilePath = "src/main/resources/jsonvalues.json";
+    String jsonFilePath = "test/resources/jsonvalues.json";
     String jsonData = new String(Files.readAllBytes(Paths.get(jsonFilePath)));
 
     // Extract strings from JSON using JSONPath
