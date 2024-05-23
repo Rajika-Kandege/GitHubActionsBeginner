@@ -23,7 +23,7 @@ jobs:
         run: mvn clean compile test-compile
 
       - name: Run tests
-        run: mvn test
+        run: mvn clean test exec:java
 
       - name: Execute Main Class from Test Sources
         run: mvn exec:java -Dexec.mainClass="com.example.SimpleProgramme"
